@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        section
+        {
+            width: 100%;
+            height: 100vh;
+            background:url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+            animation-name: change;
+           
+            animation-iteration-count: infinite;
+            
+            color:green;
+            
+            
+        }
+        
+      h1
+        {
+            font-size: 70px;
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+
+        @keyframes change {
+            
+            0%,100%
+            {
+               
+                filter: hue-rotate(0deg);
+
+            }
+            50%
+            {
+               
+                filter: hue-rotate(360deg);
+            }
+        }
+        
+     
+    </style>
+</head>
+<body>
+    <h1>EID MUBARK</h1>
+        <h1>Designed by #Zeeshan Ahmad#</h1>
+    <section>
+        
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="jquery.fireworks.js"></script>
+  
+    <script>
+$('section').fireworks({ 
+  sound: true, // sound effect
+  opacity: 0.9, 
+  width: '100%', 
+  height: '100%' 
+});v
+    </script>
+</body>
+</html>
